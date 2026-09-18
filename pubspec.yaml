@@ -1,0 +1,26 @@
+name: library_app
+description: A mobile library management system demo with Admin and Student roles, built with Clean Architecture, BLoC (global state), Dependency Injection, and the Repository Pattern.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5     # BLoC state management
+  equatable: ^2.0.5        # Value comparison for Events/States
+  get_it: ^7.6.7           # Service locator for Dependency Injection
+  intl: ^0.19.0            # Date formatting for due dates
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.3
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
